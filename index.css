@@ -1,0 +1,77 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+}
+
+header {
+    height: 56px;
+    z-index: 2;
+}
+
+.logo {
+    fill: #e50914;
+    width: 110px;
+}
+
+.right-items {
+    list-style: none;
+}
+
+.movie-item {
+    height: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.owl-nav {
+    color: #fff;
+}
+*/
+.disabled{
+    display: none;
+  }
+.movie-text {
+    bottom: 0;
+    background: #00000094;
+    height: 42px;
+    line-height: 42px;
+    left: 0;
+}
+
+.owl-nav button span {
+    color: #000
+}
+
+.owl-nav button {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -5px;
+}
+
+.owl-nav .owl-next {
+    right: 10px;
+}
+
+.movie-info{
+    background: rgb(24, 24, 24);
+    background: linear-gradient(90deg, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0) 100%);
+}
+iframe{
+    width: 400px;
+    height:200px;
+}
