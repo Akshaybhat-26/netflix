@@ -75,3 +75,10 @@ iframe{
     width: 400px;
     height:200px;
 }
+.cross-icon{
+    position: fixed;
+    top: 114px;
+    right: 18px;
+    font-size: 35px;
+    cursor:pointer;
+}

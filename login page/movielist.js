@@ -27,7 +27,7 @@ function getMovieCollectionBasedOnGenre(id,name){
     fetch(movie_collection_url + new URLSearchParams({
         api_key: "70250b8932a589e5eb0d444832559bee",
         with_genres: id,
-        page: Math.floor(Math.random() * 3) + 1
+        page: 1
     }))
     .then(res => res.json())
     .then(data => {
@@ -141,26 +141,18 @@ function getMovieInfo(listItem){
                             </g>
                         </svg>
                     </h1>
-                    <ul class="right-items d-flex align-items-center mb-0 text-white">
-                        <li class="me-2">UNLIMITED TV SHOWS & MOVIES</li>
-                        <li class="me-2"><button class="btn btn-danger">JOIN NOW</button></li>
-                        <li><button class="btn border border-white text-white">SIGN IN</button></li>
-                    </ul>
                 </header>
-                <div class="movie-info w-50 h-100 d-flex flex-column justify-content-end p-4">
+                <div class="movie-info w-50 h-100 d-flex flex-column justify-content-end p-4 fs-5">
                     <p>${original_title}</p>
                     <p>${year} | ${genresList}</p>
                     <p>${overview}</p>
+                    <div class="cross-icon cursor-pointer" data-bs-dismiss="modal">&#x292C;</div>
                 </div>
                 <div class="videos">
-                    <p class="fs-3">Videos</p>
+                    <p class="fs-3 ps-3">Videos</p>
                     <ul id="videos">
 
                     </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
                 </div>
             </div>
             </div>

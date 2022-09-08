@@ -27,7 +27,7 @@ function setLocalData() {
     localStorage.setItem("Userlist", JSON.stringify(movieuserdb));
     let a= document.createElement('a');
     a.target= '_blank';
-    a.href= '/login.html';
+    a.href= '/index.html';
     a.click();
 }
 
